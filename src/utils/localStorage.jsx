@@ -1,8 +1,18 @@
+localStorage.clear()
+
+
 const employees = [
   {
     id: 1,
-    email: "employee1@example.com",
+    firstName: "Aarav",
+    email: "e@e.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         title: "Design login page",
@@ -38,8 +48,15 @@ const employees = [
   },
   {
     id: 2,
+    firstName: "Ishaan",
     email: "employee2@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
     tasks: [
       {
         title: "Research deployment options",
@@ -85,8 +102,15 @@ const employees = [
   },
   {
     id: 3,
+    firstName: "Saanvi",
     email: "employee3@example.com",
     password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         title: "Redesign landing page",
@@ -132,47 +156,97 @@ const employees = [
   },
   {
     id: 4,
+    firstName: "Vihaan",
     email: "employee4@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 5,
+    firstName: "Myra",
     email: "employee5@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 6,
+    firstName: "Aditya",
     email: "employee6@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 7,
+    firstName: "Aanya",
     email: "employee7@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 8,
+    firstName: "Krishna",
     email: "employee8@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 9,
+    firstName: "Tanya",
     email: "employee9@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   },
   {
     id: 10,
+    firstName: "Yash",
     email: "employee10@example.com",
     password: "123",
+    taskCount: {
+      active: 0,
+      newTask: 0,
+      completed: 0,
+      failed: 0
+    },
     tasks: []
   }
 ];
+
 
 const admin = [
   {
