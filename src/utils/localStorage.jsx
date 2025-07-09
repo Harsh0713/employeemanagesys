@@ -1,4 +1,4 @@
-localStorage.clear()
+// localStorage.clear()
 
 
 const employees = [
@@ -154,18 +154,42 @@ const employees = [
       }
     ]
   },
+  
+
+  // ... keep employees 1 to 3 unchanged
   {
     id: 4,
     firstName: "Vihaan",
     email: "employee4@example.com",
     password: "123",
     taskCount: {
-      active: 0,
-      newTask: 0,
-      completed: 0,
+      active: 1,
+      newTask: 1,
+      completed: 1,
       failed: 0
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Setup CI/CD",
+        description: "Configure GitHub Actions for deployment",
+        date: "2025-07-07",
+        category: "DevOps",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Review PR",
+        description: "Code review for new feature branch",
+        date: "2025-07-06",
+        category: "Code Review",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      }
+    ]
   },
   {
     id: 5,
@@ -174,11 +198,52 @@ const employees = [
     password: "123",
     taskCount: {
       active: 0,
-      newTask: 0,
-      completed: 0,
-      failed: 0
+      newTask: 1,
+      completed: 2,
+      failed: 1
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Write blog post",
+        description: "Document new features in v2.0 release",
+        date: "2025-07-05",
+        category: "Documentation",
+        active: false,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix CSS issues",
+        description: "Resolve overlapping content bug",
+        date: "2025-07-04",
+        category: "Bug Fixing",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Test dark mode",
+        description: "Verify dark mode styling across pages",
+        date: "2025-07-03",
+        category: "Testing",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Debug navbar glitch",
+        description: "Navbar not sticking on scroll",
+        date: "2025-07-02",
+        category: "Debugging",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
+      }
+    ]
   },
   {
     id: 6,
@@ -186,12 +251,33 @@ const employees = [
     email: "employee6@example.com",
     password: "123",
     taskCount: {
-      active: 0,
-      newTask: 0,
+      active: 1,
+      newTask: 1,
       completed: 0,
-      failed: 0
+      failed: 1
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Improve form validation",
+        description: "Add regex checks for email/phone",
+        date: "2025-07-06",
+        category: "Development",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix 404 page bug",
+        description: "Incorrect routing on broken links",
+        date: "2025-07-05",
+        category: "Bug Fixing",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
+      }
+    ]
   },
   {
     id: 7,
@@ -201,10 +287,31 @@ const employees = [
     taskCount: {
       active: 0,
       newTask: 0,
-      completed: 0,
-      failed: 0
+      completed: 1,
+      failed: 1
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Design 404 page",
+        description: "Custom design for not-found pages",
+        date: "2025-07-04",
+        category: "Design",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Fix footer misalignment",
+        description: "Fix layout issue on mobile",
+        date: "2025-07-03",
+        category: "Bug Fixing",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
+      }
+    ]
   },
   {
     id: 8,
@@ -212,12 +319,43 @@ const employees = [
     email: "employee8@example.com",
     password: "123",
     taskCount: {
-      active: 0,
-      newTask: 0,
+      active: 2,
+      newTask: 1,
       completed: 0,
-      failed: 0
+      failed: 1
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Create onboarding flow",
+        description: "Build steps for new user onboarding",
+        date: "2025-07-07",
+        category: "UI/UX",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Add animation to buttons",
+        description: "Subtle hover animations",
+        date: "2025-07-06",
+        category: "Frontend",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix crash on login",
+        description: "Handle null token issue",
+        date: "2025-07-05",
+        category: "Bug Fixing",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
+      }
+    ]
   },
   {
     id: 9,
@@ -225,12 +363,33 @@ const employees = [
     email: "employee9@example.com",
     password: "123",
     taskCount: {
-      active: 0,
+      active: 1,
       newTask: 0,
-      completed: 0,
+      completed: 1,
       failed: 0
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Audit accessibility",
+        description: "Run audits for WCAG compliance",
+        date: "2025-07-06",
+        category: "Testing",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix logo padding",
+        description: "Correct spacing around logo in header",
+        date: "2025-07-04",
+        category: "Design",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      }
+    ]
   },
   {
     id: 10,
@@ -239,13 +398,56 @@ const employees = [
     password: "123",
     taskCount: {
       active: 0,
-      newTask: 0,
-      completed: 0,
-      failed: 0
+      newTask: 2,
+      completed: 1,
+      failed: 1
     },
-    tasks: []
+    tasks: [
+      {
+        title: "Refactor state management",
+        description: "Switch from Redux to Zustand",
+        date: "2025-07-07",
+        category: "Architecture",
+        active: false,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix dropdown delay",
+        description: "Improve UX responsiveness",
+        date: "2025-07-06",
+        category: "Frontend",
+        active: false,
+        newTask: true,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Complete project report",
+        description: "Summary for Q2 sprint results",
+        date: "2025-07-05",
+        category: "Reporting",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Debug toast notification",
+        description: "Toast not showing on form submit",
+        date: "2025-07-04",
+        category: "Debugging",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
+      }
+    ]
   }
 ];
+
+
 
 
 const admin = [
