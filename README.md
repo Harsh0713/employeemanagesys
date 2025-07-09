@@ -4,13 +4,13 @@ A responsive web application built with **React**, **Vite**, and **Tailwind CSS*
 
 ---
 
-## 🚀 Live Preview
+# 🚀 Live Preview
 
 https://employeemanagesys.vercel.app/
 
 ---
 
-## 🧠 Features
+# 🧠 Features
 
 - 📋 Add, edit, and delete tasks for each employee.
 - 🔄 Categorize tasks into **NewTask**, **Active**, **Failed**, and **Completed**.
@@ -21,7 +21,7 @@ https://employeemanagesys.vercel.app/
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
 Make sure you have **Node.js** and **npm** installed.
 
